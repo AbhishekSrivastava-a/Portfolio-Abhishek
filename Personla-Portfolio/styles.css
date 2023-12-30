@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Images/Bgimage.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: #666;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff7f50;
+}
+
+section {
+    padding: 50px 20px;
+
+.about-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0%;
+}
+
+.about-content h2 {
+    text-align: left;
+    font-family: 'Caveat', cursive;
+    font-size: 65px;
+    color: #333;
+    margin-left: 0;
+    margin-bottom: 0px;
+}
+
+.about-content h2:hover{
+    color:#ff7f50
+}
+
+.about-content p {
+    font-family: 'Caveat', cursive;;
+    font-weight: bolder;
+    font-size: 23px;
+    color: #666;
+    margin-top: 0px;
+}
+
+.about-content p:hover{
+    color:#ff7f50d1;
+}
+
+.about-content img{
+    float: right;
+    width: 480px;
+    height: 360px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff7f50; /* Coral color */
+}
+
+
+
+.projects-content div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 50px; 
+    width: 200px;
+    height: 150px;
+    transition: width 2s;
+    display: inline-block;
+}
+
+.projects-content h3 {
+    font-family:Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.projects-content ul,
+.projects-content ol {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.projects-content li {
+    color: #555;
+}
+
+
+.projects-content img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.projects-content img:hover {
+    transform: scale(2.0);
+
+}
+
+.skills-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.skills-content div {
+    flex: 1 1 300px;
+    margin: 0 20px;
+}
+
+.Skills h2{
+    text-align: left;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 65px;
+    
+}
+
+.skills-content h4 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skills-content p {
+    display: grid;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding: 0.6rem;
+} 
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.contact-content form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-content label {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.contact-content input,
+.contact-content textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-content input[type="submit"] {
+    grid-column: span 2;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-content input[type="submit"]:hover {
+    background-color: #ff7f50; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-content .social-icons a:hover {
+    color: #ff7f50; 
+}
+
+/*Responsivness part */
+@media screen and (max-width: 960px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: flexbox;
+        margin-bottom: 10px;
+    }
+
+    .about-content,
+    .projects-content,
+    .skills-content,
+    .contact-content {
+        padding: 30px 10px;
+    }
+
+    .projects-content div {
+        margin-bottom: 20px;
+    }
+
+    .skills-content div {
+        margin-bottom: 20px;
+    }
+
+    .contact-content form {
+        grid-template-columns: 1fr;
+    }
+}
